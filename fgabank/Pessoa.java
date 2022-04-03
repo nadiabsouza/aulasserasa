@@ -1,6 +1,6 @@
 package fgabank;
 
-public class PessoaHerançaa {
+public class Pessoa {
 	
 	private String nome;
 	private String cpf;
@@ -9,22 +9,18 @@ public class PessoaHerançaa {
 	private String email;
 	private String telefone;
 	
-	public PessoaHerançaa() {
+	public Pessoa () {
 		// metodo construtor default = preenchimento dos atributos é opcional
 	}
 	
-	
-	public PessoaHerançaa(String nome,String cpf,String rg){
-		this.nome=nome;
-		this.cpf=cpf;
-		this.rg=rg;
-		
+	public Pessoa (String nome, String cpf, String rg) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.rg = rg;
 	}
 	
 	
-
-	
-	public PessoaHerançaa(String nome, String cpf, String rg, String profissao, String email, String telefone) {
+	public Pessoa(String nome, String cpf, String rg, String profissao, String email, String telefone) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
@@ -33,13 +29,13 @@ public class PessoaHerançaa {
 		this.email = email;
 		this.telefone = telefone;
 	}
+	
+	
 
 	public String getNome() { //exibe os objetos
 		return nome;
 	}
-	
-	
-	public void setNome(String nome) { //grava os objetos nos atributos
+	public void setNome(String nome) { // grava os objetos nos atributos
 		this.nome = nome;
 	}
 	public String getCpf() {
@@ -75,7 +71,4 @@ public class PessoaHerançaa {
 	
 	
 	
-	
-	
-
 }

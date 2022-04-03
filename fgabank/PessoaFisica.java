@@ -1,24 +1,28 @@
 package fgabank;
 
-public class PessoaFisica {
+public class PessoaFisica extends PessoaHeranca{
 	
 	private String cpf;
 	private String rg;
 	private String profissao;
-	public PessoaFisica() {
+	
+	
+	public PessoaFisica() { //gcfs
 		super();
 		
-		
 	}
-	public PessoaFisica(String cpf, String rg, String profissao) {
+
+
+	public PessoaFisica(String cpf, String rg, String profissao) { // gcuf
 		super();
 		this.cpf = cpf;
 		this.rg = rg;
 		this.profissao = profissao;
 		
-		
 	}
-	public String getCpf() {
+
+	
+	public String getCpf() { //ggas
 		return cpf;
 	}
 	public void setCpf(String cpf) {
@@ -37,12 +41,7 @@ public class PessoaFisica {
 		this.profissao = profissao;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 
+	
+	
 }
