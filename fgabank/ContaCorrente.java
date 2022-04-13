@@ -16,9 +16,8 @@ public class ContaCorrente extends Conta {
 		if(valor>0 && saldo>=valor) {
 			saldo-=valor;
 			return true;	
-		}else if (valor <=(saldo+limite)){
+		}else if (valor <=(saldoComLimite)){
 			saldo-=valor;
-			limite+= saldo;
 			return true;
 		}
 	
@@ -38,16 +37,13 @@ public class ContaCorrente extends Conta {
 	}
 	
 	
-	
-	
-	
-	
 	public double getLimite() {
 		return this.limite;
 	}
 		
 	public double getSaldoComLimite() {
-		return this.limite;
+		this.saldoComLimite =this.limite+ super.saldo;
+		return this.saldoComLimite;
 			
 	}
 	
