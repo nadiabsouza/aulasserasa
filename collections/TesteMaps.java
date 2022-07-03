@@ -27,6 +27,10 @@ public class TesteMaps {
 		//informa o tamanho do map 
 		System.out.println(quadroMedalhasOlimpicas2020.size());
 		
+		// para consultar valor armazenado na chave 
+		System.out.println(quadroMedalhasOlimpicas2020.get("Brasil"));
+	
+		
 		//remover valores da lista
 		System.out.println(quadroMedalhasOlimpicas2020.remove("Brasil"));
 		
@@ -39,7 +43,7 @@ public class TesteMaps {
 
 	}
 		
-TreeMap<String, Integer>quadroMedalhasOlimpicas2016 = new TreeMap<>();
+       TreeMap<String, Integer>quadroMedalhasOlimpicas2016 = new TreeMap<>();
 		
 		quadroMedalhasOlimpicas2016.put("EUA", 103);
 		quadroMedalhasOlimpicas2016.put("China", 90);
@@ -52,6 +56,9 @@ TreeMap<String, Integer>quadroMedalhasOlimpicas2016 = new TreeMap<>();
 		
 		System.out.println(quadroMedalhasOlimpicas2016.lowerKey("China")); //mostra a chave anterior 
 		System.out.println(quadroMedalhasOlimpicas2016.higherKey("China")); //mostra a chave posterior
+		
+		System.out.println(quadroMedalhasOlimpicas2016.pollFirstEntry()); // exibe o valor e apaga posteriormente
+		System.out.println(quadroMedalhasOlimpicas2016.pollLastEntry()); // exibe o valor e apaga posteriormente
 
 }
 }
